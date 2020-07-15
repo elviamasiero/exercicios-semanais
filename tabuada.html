@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabuadaDinâmica</title>
+</head>
+<body>
+    <script>
+        /*
+        Monte um sistema que gere uma tabuada.
+        Onde informe o numero que vai ser multiplicado e também o valor até quando vai ser multiplicado.
+        Sempre iniciar em zero a minha tabuada.
+        */
+        var nome = prompt('Digite seu nome');
+        alert('Bem vindo a nossa tabuada' + nome);
+
+        var numero = parseInt(prompt('Digite o número que deseja multiplicar'));
+        var ate = parseInt(prompt('Digite o número que deseja multiplicar: '));
+
+        for(var i = 0; i <= ate; i++){
+            document.write(numero + ' x ' + i + ' = ' + i*numero + '<br>');
+        }
+            /* Fazendo com while:
+
+            var cont = o;
+            while(cont <= ate){
+                document.write(numero + ' x ' + cont + ' = ' + cont + numero + '<br>');
+                cont ++;
+            }
+            */
+
+            
+    </script>
+</body>
+</html>

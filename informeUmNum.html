@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe um número e retone</title>
+</head>
+<body>
+    <!--
+        Crie um sistema que o usuário informe um número. 
+        Retorne se o número é par ou ímpar.
+    -->
+    <script>
+        var numero = parseInt(prompt('Digite um número qualquer: '));
+
+        if(numero % 2 == 0){
+
+            document.write( 'O número que você digitou ' + numero , ' é par!');
+
+        }else{
+            document.write('O número que você digitou é impar');
+        }
+
+        /*
+        Resolução do professor:
+
+        var numero = prompt('Digite um número:');
+        if(numero % 2 != 0){
+            document.write('Você digitou o número: ' + numero + '<br>');
+            document.write('Resultado: Impar');
+        
+        }else {
+            document.write('Você digitou o número: ' + numero + '<br>');
+            document.write('Resultado: Par');
+        }
+        */
+    </script>
+</body>
+</html>

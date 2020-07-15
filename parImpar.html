@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Objetos JavaScript são uma forma de representação de coisas ou objetos reais em forma de código.
+
+        function mostrarAlerta(){
+            código
+        }
+
+
+        function mostrarAlerta(){
+            alert('Fui chamado por outra função!!');
+        }
+
+        mostrarAlerta();
+    -->
+
+    <script>
+        function retornarSeONumeroEParOuImpar(){
+            if(numero % 2 != 0){
+                return "Impar";
+            } else{
+                return "Par";
+            }
+        }
+        var resultado = retornarSeONumeroEParOuImpar(7);
+        mostrarAlerta2(resultado);
+    </script>
+</body>
+</html>

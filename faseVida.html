@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqui você vê em qual fase está</title>
+</head>
+<body>
+    <script>
+        var minhaIdade = parseInt(prompt('Digite aqui sua idade:'));
+
+        if(minhaIdade < 18){
+            document.write('Sou menor de idade');
+        }
+        else if(minhaIdade >= 18 && minhaIdade <= 30){
+            document.write('Sou adulto');
+        }
+        else if(minhaIdade > 30 && minhaIdade <= 45){
+            document.write('Quase velho');
+        }
+        else{
+            document.write('Já sou da segunda idade');
+        }
+
+    </script>
+</body>
+</html>

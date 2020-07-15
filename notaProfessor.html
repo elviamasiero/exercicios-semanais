@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota do professor</title>
+</head>
+<body>
+    <script>
+        var notaDoProfessor = parseInt(prompt('Por gentileza, avalie o seu professor de 0 a 100.'));
+
+        if(isNaN(notaDoProfessor)){
+            notaDoProfessor = - 1;
+        }
+
+        while(notaDoProfessor < 0){
+            notaDoProfessor = parseInt(prompt('Por gentileza, avalie seu professor'));
+            
+            if(isNaN(notaDoProfessor)){
+                notaDoProfessor = -1;
+            }
+        }
+
+        document.write('A nota que você deu ao professor é: ' + notaDoProfessor);
+    </script>
+</body>
+</html>

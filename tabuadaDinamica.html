@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada dinamica com função</title>
+</head>
+<body>
+    <script>
+       
+
+        function criarTabuadaDinamica(numero, final){
+            for(var i = 0; i <= final; i++){
+                document.write(numero + ' x ' + i + ' = ' + numero * i + '<br>');
+            }
+        }
+
+        function obterDadosEGerarTabuada(){
+            var multiplicador = parseInt(prompt('Digite o número que deseja multiplicar'));
+            var ateQuanto     = parseInt(prompt('Digite até quando deseja multiplicar')); 
+
+            criarTabuadaDinamica(multiplicador, ateQuanto);
+        }
+
+        obterDadosEGerarTabuada();
+    </script>
+</body>
+</html>

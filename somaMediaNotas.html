@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculado para calculas a soma e a média das notas</title>
+</head>
+<body>
+    <!--
+        Crie um sistema que receba 4 notas pelo usuário e em seguida some eles e mostre a soma delas e também, a médi.
+    -->
+    <script>
+        //variáveis para receber nota do usuário.
+        var primeiraNota = parseInt(prompt('Digite aqui sua primeira nota: '));
+        var segundaNota  = parseInt(prompt('Digite aqui sua segunda nota: '));
+        var terceiraNota = parseInt(prompt('Digite aqui sua terceira nota: '));
+        var quartaNota   = parseInt(prompt('Digite aqui sua quarta nota: '));
+
+        //variável para receber a nota e a média.
+        var soma = primeiraNota + segundaNota + terceiraNota + quartaNota;
+        var media = soma/4;
+
+        //Mostrar as notas na tela.
+        document.write('Primeira nota: ' + primeiraNota + '<br>');
+        document.write('Segunda nota: '  + segundaNota  + '<br>');
+        document.write('Terceira nota: ' + terceiraNota + '<br>');
+        document.write('Quarta nota: '   + quartaNota   + '<br>');
+
+        //Mostrar a soma e a média.
+        document.write('A soma das notas é: '   + soma  + '<br>');
+        document.write('A média das somas é: '  + media + '<br>');
+        
+        /*
+        CamelCase: Javascrip e java
+        PascalCase: C#
+        Snack_Case: Python
+        Kibab-Case: html
+
+        Tipos de dados do JavaScript
+        && = Ambas as condições tem que ser verdadeiras;
+        || = Pelo menos uma condição tem que ser verdadeira;
+        = = Ambas as condições tem que ser iguais.
+
+        Condicionais: 
+        If e Else: Utilizado para fazer testes.
+
+        Exemplo:
+
+        if(condição){
+            executa o que estiver dentro.
+        }else{
+            ececuta aqui.
+        }
+        */
+
+
+
+
+    </script>
+</body>
+</html>

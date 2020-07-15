@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte sua salada de frutas</title>
+</head>
+<body>
+    <!--
+        Array ou vetor ou matrizes ou lista []; 
+
+        var fruteira = []
+        length é o tamanho da lista. 
+
+        Fila: Primeiro que entra é o primeiro que sai.
+        Pilha: Significa que o primeiro que entra é o último que sai.
+
+        Fila tem vários métodos, como reverse (inverte a orde), sort (ordena), shift (remove a primeira pessoa do array);
+        Pilha tem vários métodos, como pop (tira o último que entrou), push (adiciona alguma coisa), splice (recebe um start e remove alguém. (4,1) 4 é onde
+        começa e 1 é quantos quero remover);
+
+        tpeof()- diz qual o texto.
+    -->
+    <script>
+        var saladaDeFrutas = [];
+        var adicionarMaisFrutas = true;
+
+        alert('Bem vindos a barraquinha de salada de frutas do professor!');
+        var nome = prompt('Digite seu nome:');
+
+        var fruta = prompt('Escolha uma fruta:');
+        saladaDeFrutas.push(fruta);
+
+        while(adicionarMaisFrutas){
+            var resposta = (prompt('Deseja adicionar mais frutas? - sim ou não'));
+
+            if(resposta == 'sim'){
+                fruta = prompt('Escolha uma fruta:');
+                saladaDeFrutas.push(fruta);
+            }  else{
+                adicionarMaisFrutas = false;
+            }
+        }
+        
+        document.write('Sua salada de fruta está pronta! <br><br>');
+        document.write('Frutas: <br>')
+
+
+        for(var i = 0; i <= saladaDeFrutas.length; i++){
+            document.write(saladaDeFrutas[i] + '<br>');
+        }
+/*
+                Aqui cada itens é criado dinamicamente de acordo com o lenght do array.
+            for(fruta of saladaDeFruta){
+                document.write(saladaDeFrutas[i] + '<br>');
+
+            }
+                                Aqui ele devolve a propriedade
+                            for(fruta in saladaDeFruta){
+                                document.write(f + '<br>');
+                            }
+*/
+    </script>
+</body>
+</html>

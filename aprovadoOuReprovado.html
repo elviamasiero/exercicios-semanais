@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        IMPORTANTE!!!!
+        EPER: Entender, Planejar, Executar e Revisar)
+        
+        Exercício:
+        1- Criar um sistema que receba 3 notas. Deve devolver as notas e a nédia das mesmas.
+        Se a média for menis que 60, informe ao usuário que ele foi reprovado.
+        Caso contrario deve informar que ele está aprovado.
+        */
+
+        var primeiraNota = parseInt(prompt('Digite a primeira nota: '));
+        var segundaNota  = parseInt(prompt('Digite a segunda nota:'));
+        var terceiraNota = parseInt(prompt('Digite a terceira nota:'));
+        const pularLinha = '<br>';
+
+        if(isNaN(primeiraNota)){
+            primeiraNota = 0;
+        } 
+        if(isNaN(segundaNota)){
+            segundaNota = 0;
+        }
+        if(isNaN(terceiraNota)){
+            terceiraNota = 0;
+        }
+        document.write('Primeira nota: ' + primeiraNota + pularLinha);
+        document.write('Segunda nota: '  + segundaNota  + pularLinha);
+        document.write('Terceira nota: ' + terceiraNota + pularLinha);
+
+        var soma = primeiraNota + segundaNota + terceiraNota;
+        document.write('A soma das notas é: ' + soma + pularLinha);
+        
+        
+        var media = soma / 3;
+        document.write('A média das somas é: '  + media + '<br>');
+        document.write(pularLinha);
+
+        if (soma < 60){
+            document.write('<h1 style= "color: red">REPROVADO</h1>');
+        } else{
+            document.write('<h1 style= "color: green">APROVADO</h1>');
+        }
+       
+        
+
+    </script>
+</body>
+</html>
